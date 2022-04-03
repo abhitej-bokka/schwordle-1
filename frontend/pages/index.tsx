@@ -42,7 +42,7 @@ const Home: NextPage = () => {
     <div>
         <div id='padding' className='pt-20'></div>
         <div className='text-8xl font-heading text-center'>
-          <div className={styles.glitchDiv}> Worgy </div>
+          <div className={styles.glitchDiv}> Schwordle </div>
         </div>
         <div className='flex flex-col justify-center items-center h-screen'>
 
