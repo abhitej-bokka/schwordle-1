@@ -109,7 +109,7 @@ const displayQuery = async function() {
 export default async function handler(req, res) {
     const session = await getSession(req, res);
 
-     //setCookies(req['query']['From'], 0, {req, res})
+    //  setCookies(req['query']['From'], 0, {req, res})
 
     //^^ ADD & DELETE LINE
 
