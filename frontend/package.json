@@ -10,11 +10,13 @@
     "ngrok": "ngrok http 3000"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "cookies-next": "^2.0.4",
     "next": "12.1.4",
     "next-session": "^4.0.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
     "ts-node": "^10.7.0",
     "twilio": "^3.76.0"
   },

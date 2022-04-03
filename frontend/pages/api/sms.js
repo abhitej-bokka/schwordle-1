@@ -7,7 +7,7 @@ const prisma = new PrismaClient()
 
 const secret = "anything-you-want-but-keep-secret";
 const userRegex = "[a-zA-z]*"
-const wordleRegex = "^[W][o][r][d][l][e][ ][0-9]{3,}[ ][1-6,X]{1}[\/][6][\n]*[ ]*[\n]*((🟩|⬛|🟨){5}[\n]{0,1}){1,5}"
+const wordleRegex = "^[W][o][r][d][l][e][ ][0-9]{3,}[ ][1-6,X]{1}[\/][6][\n]*[ ]*[\n]*((🟩|⬛|🟨|⬜){5}[\n]{0,1}){1,5}"
 const solvedRegex = "[🟩]{10}$"
 const joinRegex = "[J][O][I][N][ ][a-zA-z0-9]{5}"
 
@@ -56,13 +56,7 @@ const validGroup = async function(groupId) {
   return result.length != 0;
 }
 
-const getLeader = async function(wordleText) {
 
-  console.log(extractWordleSolve(wordleText));
-  const result = await prisma.$queryRaw`SELECT * FROM User` 
-
-  return result;
-}
 
 const addMessage = async function(phoneNumber, wordleText) {
 
@@ -78,7 +72,8 @@ const addMessage = async function(phoneNumber, wordleText) {
     return false;
   })
   //
-  console.log(await getLeader(wordleText));
+  //console.log(await getLeader(wordleText));
+  console.log(await displayQuery());
   //^^comment out if not working^^
   return true
 }
@@ -88,14 +83,35 @@ function extractWordleNumber(message){
   return messageArray[1]
 }
 
+const getLeader = async function(wordleText) {
+
+  console.log(extractWordleSolve(wordleText));
+  //const result = await prisma.$queryRaw`SELECT * FROM User` 
+  const result = await prisma.$queryRaw`SELECT wordleGame, AVG(wordleScore), COUNT(wordleGame) FROM Message GROUP BY wordleGame` 
+//SELECT wordleGame, AVG(wordleScore), COUNT(wordleGame) FROM Message GROUP BY wordleGame;
+  return result;
+}
+
 function extractWordleSolve(message){
   var messageArray = message.split(" ")
   return messageArray[2].charAt(0)
 }
+
+const displayQuery = async function() {
+  const showBoard = await prisma.$queryRaw`SELECT wordleGame, AVG(wordleScore), COUNT(wordleGame) FROM Message GROUP BY wordleGame`
+  const topGameScorer = await prisma.$queryRaw`SELECT wordleGame, wordleScore, userPhone FROM Message GROUP By wordleGame ORDER By wordleGame`
+  const wordleDifficulty = await prisma.$queryRaw`SELECT wordleGame, AVG(wordleScore) FROM Message GROUP By wordleGame ORDER By wordleScore`
+  const topScores = await prisma.$queryRaw`SELECT wordleGame, wordleScore, userPhone FROM Message  ORDER By wordleScore`
+
+  return showBoard;
+}
+
 export default async function handler(req, res) {
     const session = await getSession(req, res);
 
-    setCookies(req['query']['From'], 0, {req, res})
+     //setCookies(req['query']['From'], 0, {req, res})
+
+    //^^ ADD & DELETE LINE
 
     let smsCount = getCookie(req['query']['From'], {req, res}) || 0
 
