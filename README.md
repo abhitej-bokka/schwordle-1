@@ -40,3 +40,4 @@ In another terminal, run ngrok as such:
 Now, with the routed URL we see in ngrok, put the URL as the URL for the webhook for the number you want to be responding to in your twilio account.
 
 # Images of a dashboard!
+<img src="frontend/public/dashboard.jpeg">
