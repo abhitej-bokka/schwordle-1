@@ -1,0 +1,24 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["cockroachdb"]
+}
+
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
+model Message {
+  userPhone     String @id
+  messageString String
+  wordleGame    String
+  User          User   @relation(fields: [userPhone], references: [userPhone])
+}
+
+model User {
+  userPhone String   @id
+  createdAt DateTime @default(now())
+  name      String?
+  groupCode String
+  message   Message[]
+}
