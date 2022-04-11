@@ -19,6 +19,17 @@ A Vue.js wrapper for the beautiful date-range picker made by the **[Baremetrics]
 
 The Vue-Baremetrics date range picker is a simplified solution for selecting both date ranges and single dates all from a single calender view. With a revamped minimalistic redesign.
 
+### Background
+
+My friend Ayush Patel told me that there was a hackathon at Rutgers and it would have a lot of prizes so I decided to sign up on a whim. We were just chilling during the hackathon just thinking about what kind of project we could make when suddenly my friend, Dhruv Ghoniya, texted this to our groupchat:
+
+Wordle 287 2/6
+
+⬜🟨⬜⬜🟨
+🟩🟩🟩🟩🟩
+
+It came out of thin air that I just wanted to see a place to see all of our wordles together without having to scroll through a groupchat. I was also wondering who was the best and like what kind of statistics we can come up with. We saw some potential free prizes and we told ourselves we have to get that Twilio prize. With an idea and just a day to code, we went right at it. We created schwordle, an all inclusive .....
+
 # Installation
 
 First, create a .env file with the following information:
