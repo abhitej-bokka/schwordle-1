@@ -26,7 +26,7 @@ My friend Ayush Patel told me that there was a hackathon at Rutgers and it would
 
 Wordle 287 2/6
 
-⬜🟨⬜⬜🟨 \n
+⬜🟨⬜⬜🟨                                                                                                                                                   
 🟩🟩🟩🟩🟩
 
 
