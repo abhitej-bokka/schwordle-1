@@ -52,7 +52,7 @@ In another terminal, run ngrok as such:
 
 Now, with the routed URL we see in ngrok, put the URL as the URL for the webhook for the number you want to be responding to in your twilio account.
 
-## Demo of Schwordle!
+## Demo of Schwordle! (Click the Image lol)
 
 
 [<img src="frontend/public/dashboard.jpeg">](http://www.youtube.com/watch?v=-7Tb-z57g6Y "Video Title")
