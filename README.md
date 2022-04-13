@@ -54,6 +54,10 @@ Now, with the routed URL we see in ngrok, put the URL as the URL for the webhook
 
 ## Demo of Schwordle!
 
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/-7Tb-z57g6Y/0.jpg)](http://www.youtube.com/watch?v=-7Tb-z57g6Y "Video Title")
+
+
 https://youtu.be/-7Tb-z57g6Y
 
 ## Images of a dashboard!
