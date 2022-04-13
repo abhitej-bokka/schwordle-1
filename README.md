@@ -24,11 +24,7 @@ Have you and your friends been obsessed with wordle recently? Itching for the ne
 
 My friend Ayush Patel told me that there was a hackathon at Rutgers and it would have a lot of prizes so I decided to sign up on a whim. We were just chilling during the hackathon just thinking about what kind of project we could make when suddenly my friend, Dhruv Ghoniya, texted this to our groupchat:
 
-Wordle 287 2/6
-
-⬜🟨⬜⬜🟨                                                                                                                                                   
-🟩🟩🟩🟩🟩
-
+<img src="frontend/public/IMG_7688.jpg">
 
 We had a group chat and anywhere from 12 - 1 am, a bunch of wordles would come through and we wanted to elevate this experience and see how we compared to everyone. It came out of thin air that I just wanted to see a place to see all of our wordles together without having to scroll through a groupchat. I was also wondering who was the best and like what kind of statistics we can come up with. We saw some potential free prizes and we told ourselves we have to get that Twilio prize. With an idea and just a day to code, we went right at it and created schwordle!
 
