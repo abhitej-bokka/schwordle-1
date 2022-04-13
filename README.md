@@ -30,7 +30,7 @@ Wordle 287 2/6
 🟩🟩🟩🟩🟩
 
 
-We had a group chat and anywhere from 12 - 1 am, a bunch of wordles would come through and we wanted to elevate this experience and see how we compared to everyone. It came out of thin air that I just wanted to see a place to see all of our wordles together without having to scroll through a groupchat. I was also wondering who was the best and like what kind of statistics we can come up with. We saw some potential free prizes and we told ourselves we have to get that Twilio prize. With an idea and just a day to code, we went right at it. We created schwordle, an all inclusive .....
+We had a group chat and anywhere from 12 - 1 am, a bunch of wordles would come through and we wanted to elevate this experience and see how we compared to everyone. It came out of thin air that I just wanted to see a place to see all of our wordles together without having to scroll through a groupchat. I was also wondering who was the best and like what kind of statistics we can come up with. We saw some potential free prizes and we told ourselves we have to get that Twilio prize. With an idea and just a day to code, we went right at it and created schwordle!
 
 # Installation
 
