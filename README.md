@@ -20,7 +20,7 @@ A Vue.js wrapper for the beautiful date-range picker made by the **[Baremetrics]
 
 Have you and your friends been obsessed with wordle recently? Itching for the new wordle at 12 am? Schwordle comes with an interactive dashboard that encapsulates the best of your wordle successes!
 
-### Background
+## Background
 
 My friend Ayush Patel told me that there was a hackathon at Rutgers and it would have a lot of prizes so I decided to sign up on a whim. We were just chilling during the hackathon just thinking about what kind of project we could make when suddenly my friend, Dhruv Ghoniya, texted this to our groupchat:
 
@@ -78,7 +78,7 @@ We learned how to implement Twilio and CockroachDB into our project. It became a
 
 We definitely plan on getting a site up and running to work for anyone. We also will display statistics regarding performance to up the stakes and make it competitive.
 
-## Update (5/12/22)
+### Update (5/12/22)
 We used the data we obtained in R and endeavored onto some statistical anyalyses.
 You can check out some of the work here:
 https://abhitej-bokka.github.io/schwordle-analytics/wordle.nb%20(1).html
