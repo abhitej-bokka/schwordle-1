@@ -78,4 +78,9 @@ We learned how to implement Twilio and CockroachDB into our project. It became a
 
 We definitely plan on getting a site up and running to work for anyone. We also will display statistics regarding performance to up the stakes and make it competitive.
 
+## Update (5/12/22)
+We used the data we obtained in R and endeavored onto some statistical anyalyses.
+You can check out some of the work here:
+https://abhitej-bokka.github.io/schwordle-analytics/wordle.nb%20(1).html
+
 Built with: Twilio, CockroachDB, Prisma, Next.js, TailwindCSS
